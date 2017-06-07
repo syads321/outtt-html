@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Github Api</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .mid {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body ng-app="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img ng-src="{{user.avatar_url}}" class="profile-img">
+                <h2>{{user.name}}</h2>
+                <h3>{{user.login}}</h3>
+                <p class="profile-bio">
+                    {{user.bio}}
+                </p>
+            </div>
+            <div class="col-md-9">
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#/" aria-controls="home" role="tab">Overview</a></li>
+                        <li role="presentation"><a href="#/repositories" aria-controls="profile" role="tab">Repositories<span class="badge">{{user.public_repos}}</span></a></li>
+                        <li role="presentation"><a href="#/stars" aria-controls="messages" role="tab">Stars<span class="badge">{{user.public_repos}}</span></li>
+                        <li role="presentation"><a href="#/followers" aria-controls="settings" role="tab">Follower<span class="badge">{{user.followers}}</span></a></li>
+                        <li role="presentation"><a href="#/following" aria-controls="settings" role="tab">Following<span class="badge">{{user.following}}</span></a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active">
+                            <div class="content">
+                                <div ng-view class="question"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
