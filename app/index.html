@@ -11,58 +11,242 @@
     <meta name="author" content="">
 
 
-    <title>Github Api</title>
+    <title>Outt</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<style>
-    .mid {
-        display: block;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
 
-<body ng-app="app">
+<body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">COMPANY LOGO</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar/">PLATFORM</a></li>
+                    <li><a href="./">ABOUT</span></a></li>
+                    <li><a class="btn btn-default btn-menu" href="../navbar-fixed-top/">SIGN UP</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <img ng-src="{{user.avatar_url}}" class="profile-img">
-                <h2>{{user.name}}</h2>
-                <h3>{{user.login}}</h3>
-                <p class="profile-bio">
-                    {{user.bio}}
-                </p>
-            </div>
-            <div class="col-md-9">
-                <div>
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation"><a href="#/" aria-controls="home" role="tab">Overview</a></li>
-                        <li role="presentation"><a href="#/repositories" aria-controls="profile" role="tab">Repositories<span class="badge">{{user.public_repos}}</span></a></li>
-                        <li role="presentation"><a href="#/stars" aria-controls="messages" role="tab">Stars<span class="badge">{{user.public_repos}}</span></li>
-                        <li role="presentation"><a href="#/followers" aria-controls="settings" role="tab">Follower<span class="badge">{{user.followers}}</span></a></li>
-                        <li role="presentation"><a href="#/following" aria-controls="settings" role="tab">Following<span class="badge">{{user.following}}</span></a></li>
-                    </ul>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active">
-                            <div class="content">
-                                <div ng-view class="question"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron text-center">
+            <h1>BEST HEADLINE IN THE WORLD</h1>
+            <p class="mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in lectus dui. Sed consectetur porttitor congue. Sed iaculis posuere sodales. Duis ac efficitur lacus. Donec efficitur ac metus sit amet fringilla.</p>
+            <p class="mid">
+                <a class="btn btn-lg btn-primary" role="button">CTA BUTTON</a>
+            </p>
         </div>
 
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="video col-xs-12 col-md-6 mid"></div>
+        </div>
+        <hr class="main">
+    </div>
 
-    <script src="js/scripts.js"></script>
+    <div class="container">
+        <h2 class="text-center">WHY USE OUR PLATFORM</h2>
+        <div class="row">
+            <div class="col-lg-10 mid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 1</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 2</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 3</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 4</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 5</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-6">
+                        <div class="media feature-platform">
+                            <div class="media-left">
+                                <a href="#"> icon </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">FEATURE NO 6</h4> I am really good at feature. That's why want to talk about it</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-wrapper-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 mid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>HOW IT WORKS</h2>
+                            Fusce molestie orci et enim mollis, sed ultrices elit tempor. Maecenas ac elit sollicitudin, dignissim augue a, sagittis libero. Duis finibus tempor tristique. Morbi ex nibh, pulvinar at velit ut, imperdiet ullamcorper erat. In pellentesque leo sit amet
+                            interdum lacinia. Pellentesque porta erat metus. Nunc pharetra purus eu velit gravida, quis vestibulum dolor pretium.
+                            <hr class="invisible">
+                            <a class="btn btn-default btn-menu" href="../navbar-fixed-top/">SIGN UP</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="div-wrap-2"></div>
+                            <div class="div-wrap-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="invisible" style="margin-bottom: 55px;">
+            </div>
+        </div>
+    </div>
+    <div class="container testimoni">
+        <h2 class="text-center">WHAT THEY SAY ABOUT US</h2>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 col-md-9 col-sm-12 mid text-center">
+                <p>
+                    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean a dapibus lacus. Fusce molestie orci et enim mollis, sed ultrices elit tempor.
+                </p>
+                <hr class="invisible">
+
+            </div>
+            <div class="mid col-lg-3 col-md-6 col-xs-12 mid">
+                <hr>
+            </div>
+            <div class="mid col-lg-3 col-md-6 col-xs-12 mid text-center">
+                <h4>JOHN DOE</h4>
+                <h4>CEO OF GET DOUGH</h4>
+            </div>
+            <div class="mid col-lg-5 col-md-6 col-xs-12 mid img-profiles text-center">
+                <img src="img/profile-active.png">
+                <img src="img/profile.png">
+                <img src="img/profile.png">
+                <img src="img/profile.png">
+            </div>
+        </div>
+    </div>
+    <div class="bg-wrapper-3">
+        <div class="container">
+            <h2 class="text-center">GET IN TOUCH</h2>
+            <p class="text-center">Learn more how to user our product and sign up to our newsletter.</p>
+            <div class="row">
+                <hr class="invisible">
+                <div class="col-lg-6 col-md-8 col-xs-6 mid">
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-8">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="add your email">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-4">
+                                <button type="submit" class="btn btn-default btn-block">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-wrapper-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 mid">
+                    <div class="banner-item">logo</div>
+                    <div class="banner-item">logo</div>
+                    <div class="banner-item">logo</div>
+                    <div class="banner-item">logo</div>
+                    <div class="banner-item">logo</div>
+                    <div class="banner-item">logo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4>PRODUCT</h4>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>PARTNERS</h4>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>RESOURCES</h4>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>ABOUT</h4>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                    <div><a href="#">Link 1</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /container -->
+
 </body>
 
 </html>
